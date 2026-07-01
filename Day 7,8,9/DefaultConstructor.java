@@ -1,8 +1,8 @@
-class Book {
+class LibraryBook {
     String title;
     String author;
 
-    Book() {
+    LibraryBook() {
         title = "Unknown";
         author = "Unknown";
     }
@@ -15,7 +15,7 @@ class Book {
 
 public class DefaultConstructor {
     public static void main(String[] args) {
-        Book b = new Book();
+        LibraryBook b = new LibraryBook();
         b.display();
     }
 }

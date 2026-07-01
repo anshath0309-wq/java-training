@@ -1,10 +1,10 @@
-class Parent {
+class CastingParent {
     void display() {
         System.out.println("Parent display");
     }
 }
 
-class Child extends Parent {
+class CastingChild extends CastingParent {
     void display() {
         System.out.println("Child display");
     }
@@ -16,10 +16,10 @@ class Child extends Parent {
 
 public class UpcastingDowncasting {
     public static void main(String[] args) {
-        Parent p = new Child();
+        CastingParent p = new CastingChild();
         p.display();
         
-        Child c = (Child) p;
+        CastingChild c = (CastingChild) p;
         c.display();
         c.show();
     }

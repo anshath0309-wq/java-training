@@ -1,4 +1,4 @@
-class Dog {
+class PetDog {
     String name;
     String breed;
 
@@ -9,7 +9,7 @@ class Dog {
 
 public class IntroToOOP {
     public static void main(String[] args) {
-        Dog d = new Dog();
+        PetDog d = new PetDog();
         d.name = "Buddy";
         d.breed = "Labrador";
         System.out.println("Dog Name: " + d.name);

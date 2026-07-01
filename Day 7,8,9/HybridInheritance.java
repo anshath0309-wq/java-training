@@ -1,18 +1,18 @@
-interface Engine {
+interface HybridEngine {
     void start();
 }
 
-interface Wheels {
+interface HybridWheels {
     void rotate();
 }
 
-class Vehicle {
+class HybridVehicle {
     void move() {
         System.out.println("Vehicle is moving");
     }
 }
 
-class Car extends Vehicle implements Engine, Wheels {
+class HybridCar extends HybridVehicle implements HybridEngine, HybridWheels {
     public void start() {
         System.out.println("Car engine started");
     }
@@ -24,7 +24,7 @@ class Car extends Vehicle implements Engine, Wheels {
 
 public class HybridInheritance {
     public static void main(String[] args) {
-        Car myCar = new Car();
+        HybridCar myCar = new HybridCar();
         myCar.move();
         myCar.start();
         myCar.rotate();

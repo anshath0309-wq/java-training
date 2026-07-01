@@ -1,4 +1,4 @@
-class Student {
+class BasicStudent {
     String name;
     int rollNo;
 
@@ -10,7 +10,7 @@ class Student {
 
 public class ClassAndObject {
     public static void main(String[] args) {
-        Student s = new Student();
+        BasicStudent s = new BasicStudent();
         s.name = "Rahul";
         s.rollNo = 101;
         s.display();

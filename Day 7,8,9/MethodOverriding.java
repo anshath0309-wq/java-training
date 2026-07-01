@@ -1,21 +1,21 @@
-class Vehicle {
+class OverridingVehicle {
     void run() {
         System.out.println("Vehicle is running");
     }
 }
 
-class Bike extends Vehicle {
+class OverridingBike extends OverridingVehicle {
     void run() {
-        System.out.println("Bike is running at 60 km/h");
+        System.out.println("Bike is running at 60 km/h in the road");
     }
 }
 
 public class MethodOverriding {
     public static void main(String[] args) {
-        Vehicle v = new Vehicle();
+        OverridingVehicle v = new OverridingVehicle();
         v.run();
 
-        Bike b = new Bike();
+        OverridingBike b = new OverridingBike();
         b.run();
     }
 }

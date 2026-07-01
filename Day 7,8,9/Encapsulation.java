@@ -1,4 +1,4 @@
-class BankAccount {
+class EncapsulatedAccount {
     private String owner;
     private double balance;
 
@@ -23,7 +23,7 @@ class BankAccount {
 
 public class Encapsulation {
     public static void main(String[] args) {
-        BankAccount acc = new BankAccount();
+        EncapsulatedAccount acc = new EncapsulatedAccount();
         acc.setOwner("Rahul");
         acc.setBalance(25000);
         System.out.println("Owner: " + acc.getOwner());

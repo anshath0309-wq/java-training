@@ -1,22 +1,22 @@
-class Shape {
+class HierarchicalShape {
     void draw() {
         System.out.println("Drawing a Shape");
     }
 }
 
-class Circle extends Shape {
+class HierarchicalCircle extends HierarchicalShape {
     void draw() {
         System.out.println("Drawing a Circle");
     }
 }
 
-class Rectangle extends Shape {
+class HierarchicalRectangle extends HierarchicalShape {
     void draw() {
         System.out.println("Drawing a Rectangle");
     }
 }
 
-class Triangle extends Shape {
+class HierarchicalTriangle extends HierarchicalShape {
     void draw() {
         System.out.println("Drawing a Triangle");
     }
@@ -24,9 +24,9 @@ class Triangle extends Shape {
 
 public class HierarchicalInheritance {
     public static void main(String[] args) {
-        Circle c = new Circle();
-        Rectangle r = new Rectangle();
-        Triangle t = new Triangle();
+        HierarchicalCircle c = new HierarchicalCircle();
+        HierarchicalRectangle r = new HierarchicalRectangle();
+        HierarchicalTriangle t = new HierarchicalTriangle();
         c.draw();
         r.draw();
         t.draw();

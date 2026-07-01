@@ -1,12 +1,12 @@
-interface Printable {
+interface MultiPrintable {
     void print();
 }
 
-interface Showable {
+interface MultiShowable {
     void show();
 }
 
-class Document implements Printable, Showable {
+class MultiDocument implements MultiPrintable, MultiShowable {
     public void print() {
         System.out.println("Printing document");
     }
@@ -18,7 +18,7 @@ class Document implements Printable, Showable {
 
 public class MultipleInheritance {
     public static void main(String[] args) {
-        Document doc = new Document();
+        MultiDocument doc = new MultiDocument();
         doc.print();
         doc.show();
     }

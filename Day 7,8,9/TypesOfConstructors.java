@@ -1,8 +1,8 @@
-class Student {
+class ConstructorStudent {
     String name;
     int rollNo;
 
-    Student() {
+    ConstructorStudent() {
         name = "Unknown";
         rollNo = 0;
     }
@@ -12,11 +12,11 @@ class Student {
     }
 }
 
-class Employee {
+class ConstructorEmployee {
     String name;
     double salary;
 
-    Employee(String name, double salary) {
+    ConstructorEmployee(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
@@ -26,16 +26,16 @@ class Employee {
     }
 }
 
-class Car {
+class ConstructorCar {
     String brand;
     int year;
 
-    Car(String brand, int year) {
+    ConstructorCar(String brand, int year) {
         this.brand = brand;
         this.year = year;
     }
 
-    Car(Car other) {
+    ConstructorCar(ConstructorCar other) {
         this.brand = other.brand;
         this.year = other.year;
     }
@@ -49,18 +49,18 @@ public class TypesOfConstructors {
     public static void main(String[] args) {
 
         System.out.println("1. Default Constructor");
-        Student s1 = new Student();
+        ConstructorStudent s1 = new ConstructorStudent();
         s1.display();
 
         System.out.println("\n2. Parameterized Constructor");
-        Employee e1 = new Employee("Varun", 75000);
-        Employee e2 = new Employee("Rahul", 60000);
+        ConstructorEmployee e1 = new ConstructorEmployee("Varun", 75000);
+        ConstructorEmployee e2 = new ConstructorEmployee("Rahul", 60000);
         e1.display();
         e2.display();
 
         System.out.println("\n3. Copy Constructor");
-        Car c1 = new Car("Toyota", 2025);
-        Car c2 = new Car(c1);
+        ConstructorCar c1 = new ConstructorCar("Toyota", 2025);
+        ConstructorCar c2 = new ConstructorCar(c1);
         c1.display();
         c2.display();
     }

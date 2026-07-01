@@ -1,4 +1,4 @@
-class MathOperations {
+class OverloadingMath {
     int add(int a, int b) {
         return a + b;
     }
@@ -14,7 +14,7 @@ class MathOperations {
 
 public class MethodOverloading {
     public static void main(String[] args) {
-        MathOperations m = new MathOperations();
+        OverloadingMath m = new OverloadingMath();
         System.out.println("add(10, 20) = " + m.add(10, 20));
         System.out.println("add(10, 20, 30) = " + m.add(10, 20, 30));
         System.out.println("add(5.5, 3.5) = " + m.add(5.5, 3.5));

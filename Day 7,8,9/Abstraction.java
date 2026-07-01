@@ -1,4 +1,4 @@
-abstract class Animal {
+abstract class AbstractAnimal {
     abstract void sound();
 
     void sleep() {
@@ -6,7 +6,7 @@ abstract class Animal {
     }
 }
 
-class Cat extends Animal {
+class AbstractCat extends AbstractAnimal {
     void sound() {
         System.out.println("Cat says: Meow");
     }
@@ -14,7 +14,7 @@ class Cat extends Animal {
 
 public class Abstraction {
     public static void main(String[] args) {
-        Cat c = new Cat();
+        AbstractCat c = new AbstractCat();
         c.sound();
         c.sleep();
     }

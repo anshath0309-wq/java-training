@@ -1,4 +1,4 @@
-class Mobile {
+class MobilePhone {
     String brand;
     int price;
 
@@ -9,11 +9,11 @@ class Mobile {
 
 public class CreatingObjects {
     public static void main(String[] args) {
-        Mobile m1 = new Mobile();
+        MobilePhone m1 = new MobilePhone();
         m1.brand = "Samsung";
         m1.price = 15000;
 
-        Mobile m2 = new Mobile();
+        MobilePhone m2 = new MobilePhone();
         m2.brand = "Apple";
         m2.price = 80000;
 

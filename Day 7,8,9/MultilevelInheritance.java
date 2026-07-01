@@ -1,16 +1,16 @@
-class GrandFather {
+class MultiGrandFather {
     void showGrandFather() {
         System.out.println("I am GrandFather");
     }
 }
 
-class Father extends GrandFather {
+class MultiFather extends MultiGrandFather {
     void showFather() {
         System.out.println("I am Father");
     }
 }
 
-class Son extends Father {
+class MultiSon extends MultiFather {
     void showSon() {
         System.out.println("I am Son");
     }
@@ -18,7 +18,7 @@ class Son extends Father {
 
 public class MultilevelInheritance {
     public static void main(String[] args) {
-        Son s = new Son();
+        MultiSon s = new MultiSon();
         s.showGrandFather();
         s.showFather();
         s.showSon();

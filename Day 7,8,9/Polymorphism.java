@@ -1,4 +1,4 @@
-class Calculation {
+class PolyCalculation {
     int add(int a, int b) {
         return a + b;
     }
@@ -8,13 +8,13 @@ class Calculation {
     }
 }
 
-class Animal {
+class PolyAnimal {
     void sound() {
         System.out.println("Animal sound");
     }
 }
 
-class Cat extends Animal {
+class PolyCat extends PolyAnimal {
     void sound() {
         System.out.println("Meow");
     }
@@ -22,14 +22,14 @@ class Cat extends Animal {
 
 public class Polymorphism {
     public static void main(String[] args) {
-        Calculation calc = new Calculation();
+        PolyCalculation calc = new PolyCalculation();
         System.out.println(calc.add(5, 10));
         System.out.println(calc.add(5, 10, 15));
 
-        Animal myAnimal = new Animal();
+        PolyAnimal myAnimal = new PolyAnimal();
         myAnimal.sound();
 
-        Animal myCat = new Cat();
+        PolyAnimal myCat = new PolyCat();
         myCat.sound();
     }
 }

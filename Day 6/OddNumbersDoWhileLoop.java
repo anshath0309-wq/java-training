@@ -1,4 +1,4 @@
-public class PrintOddNumbers {
+public class OddNumbersDoWhileLoop {
     public static void main(String[] args) {
         int i = 1;
         do {

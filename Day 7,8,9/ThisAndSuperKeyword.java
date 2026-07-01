@@ -1,7 +1,7 @@
-class Parent {
+class KeywordParent {
     String name;
 
-    Parent(String name) {
+    KeywordParent(String name) {
         this.name = name;
         System.out.println("Parent Constructor: " + this.name);
     }
@@ -11,10 +11,10 @@ class Parent {
     }
 }
 
-class Child extends Parent {
+class KeywordChild extends KeywordParent {
     String childName;
 
-    Child(String parentName, String childName) {
+    KeywordChild(String parentName, String childName) {
         super(parentName);
         this.childName = childName;
         System.out.println("Child Constructor: " + this.childName);
@@ -28,7 +28,7 @@ class Child extends Parent {
 
 public class ThisAndSuperKeyword {
     public static void main(String[] args) {
-        Child c = new Child("Ramesh", "Suresh");
+        KeywordChild c = new KeywordChild("Ramesh", "Suresh");
         System.out.println();
         c.display();
     }

@@ -1,12 +1,12 @@
-interface Printable {
+interface SimplePrintable {
     void print();
 }
 
-interface Showable {
+interface SimpleShowable {
     void show();
 }
 
-class Document implements Printable, Showable {
+class SimpleDocument implements SimplePrintable, SimpleShowable {
     public void print() {
         System.out.println("Printing document...");
     }
@@ -18,7 +18,7 @@ class Document implements Printable, Showable {
 
 public class InterfaceExample {
     public static void main(String[] args) {
-        Document d = new Document();
+        SimpleDocument d = new SimpleDocument();
         d.print();
         d.show();
     }
