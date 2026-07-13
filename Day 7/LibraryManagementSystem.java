@@ -17,7 +17,7 @@ public class LibraryManagementSystem {
         lib.displayCatalog();
 
         lib.borrowBook("ISBN-102");
-        lib.borrowBook("ISBN-102"); // Try borrowing already issued book
+        lib.borrowBook("ISBN-102");
         lib.returnBook("ISBN-102");
         lib.displayCatalog();
     }
@@ -36,12 +36,25 @@ class LibraryBook {
         this.isIssued = false;
     }
 
-    public String getIsbn() { return isbn; }
-    public String getTitle() { return title; }
-    public String getAuthor() { return author; }
-    public boolean isIssued() { return isIssued; }
+    public String getIsbn() {
+        return isbn;
+    }
 
-    public void setIssued(boolean issued) { this.isIssued = issued; }
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public boolean isIssued() {
+        return isIssued;
+    }
+
+    public void setIssued(boolean issued) {
+        this.isIssued = issued;
+    }
 }
 
 class Library {
