@@ -1,3 +1,5 @@
+package Day27;
+
 import java.util.Scanner;
 
 public class ReverseaString {
